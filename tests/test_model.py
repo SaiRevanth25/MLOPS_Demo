@@ -15,4 +15,4 @@ def test_prediction():
     sample = [[5.1, 3.5, 1.4, 0.2],
               [4.1,3.5,1.0,0.1]]
     result = predict(sample)
-    assert result in [0, 1, 2]
+    assert result.all() in [0, 1, 2]
